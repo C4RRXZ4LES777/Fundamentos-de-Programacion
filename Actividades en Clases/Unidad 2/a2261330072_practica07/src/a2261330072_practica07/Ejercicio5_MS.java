@@ -1,0 +1,32 @@
+package a2261330072_practica07;
+
+import java.util.Scanner;
+
+public class Ejercicio5_MS {
+    public static void main(String args[]) {
+        int num;
+        String salida;
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Introduce un Numero");
+        num = entrada.nextInt();
+        salida = "";
+        
+        if ((num > 0) && (num % 2 == 0)) {
+            salida = "Es Positivo y Par";
+        } else {
+            if ((num > 0) && (num % 2 != 0)) {
+                salida = "Es Positivo e Impar";
+            } else {
+                if ((num < 0) && (num % 2 == 0)) {
+                    salida = "Es Negativo y Par";
+                } else {
+                    salida = "Es Negativo e ImPar";
+                }
+            }
+        }
+        
+        System.out.println(salida);
+        System.exit(0);
+    }
+}
